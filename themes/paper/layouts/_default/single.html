@@ -48,7 +48,7 @@
   {{ end }}
 
   <!-- Disqus -->
-  {{ if and site.DisqusShortname (not (eq .Params.comments false)) }}
+  {{ if and site.DisqusShortname (not (eq .Params.comments false)) and ne .Type "page" }}
   <div id="disqus_thread"></div>
   <script>
     const disqusShortname = '{{ site.DisqusShortname }}';
