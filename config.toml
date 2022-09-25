@@ -1,6 +1,6 @@
 baseURL = 'https://www.ekowbaah.dev/'
 languageCode = 'en-us'
-title = 'E.'
+title = 'Ekow.'
 theme="paper"
 author="Ekow Baah-Nyarkoh"
 disqusShortname = 'ekowbaah'   # add disqus comments
