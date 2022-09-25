@@ -1,0 +1,81 @@
+baseURL = 'https://ekowbaah.dev/'
+languageCode = 'en-us'
+title = 'Ekow.'
+theme="paper"
+author="Ekow Baah-Nyarkoh"
+disqusShortname = 'ekowbaah'   # add disqus comments
+paginate = 3
+copyright = "Copyright © 2022,Ekow Baah-Nyarkoh; all rights reserved."
+[params]
+  # color style
+  color = 'linen'                 # linen, wheat, gray, light
+
+  # header social icons
+  twitter = 'ekowgyan_'     # twitter.com/ekowgyan_
+  github = 'ekowbaah'       # github.com/ekowbaah
+  instagram = 'YOUR_INSTAGRAM_ID' # instagram.com/YOUR_INSTAGRAM_ID
+
+
+  # home page profile
+  avatar = 'https://raw.githubusercontent.com/kevinkhagan/adinkra-icons/master/icons/uac-nkanea.svg'       # Gravatar email or image url(e.g. "https://deno.land/logo.svg")
+  name = 'Ekow'
+  bio = 'Software engineer based in Stockholm, Sweden'
+
+# ------------------------------
+
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
+
+  # misc
+  disableHLJS = true              # disable requesting highlight.js
+  monoDarkIcon = false             # show monochrome dark mode icon
+
+  
