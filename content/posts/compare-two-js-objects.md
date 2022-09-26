@@ -1,6 +1,6 @@
 +++
 author = "Ekow Baah-Nyarkoh"
-title = "How to Compare 2 objects in JavaScript  🥷"
+title = "How to compare 2 objects in JavaScript  🥷"
 date = "2022-09-26"
 description = "Best way to compare two javascript objects"
 tags = [
