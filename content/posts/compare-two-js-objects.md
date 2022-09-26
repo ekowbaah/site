@@ -11,7 +11,7 @@ tags = [
 
 How do you compare two objects in javascript? The first thing that comes to mind is to use the classic comparison operators but does it work? This article will look at ways of comparing two javascript objects with and without using any third-party libraries. We will also look at the benefits and tradeoffs of each.
 
-## Why comparison operators won't work.
+## Why direct comparison operators won't work.
 
 In JavaScript, values are either primitives or objects. Primitive types (such as string and number) are immutable. So, for example, the number 16 will always be the number 16; the string "Robert" will always be the string "Robert". Objects, on the other hand, are mutable.
 
