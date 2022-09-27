@@ -2,11 +2,13 @@
 author = "Ekow Baah-Nyarkoh"
 title = "Book review: The psychology of money 🧠 💸"
 date = "2022-09-12"
-description = "Best way to compare two javascript objects"
+description = "Review of the book psychology of money by Morgan Housel"
 tags = [
     "money",
     "personal finance",
-    "book review"
+    "book review",
+    "reading",
+    "Morgan Housel"
 ]
 +++
 
