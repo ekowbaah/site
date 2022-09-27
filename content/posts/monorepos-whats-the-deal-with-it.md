@@ -10,7 +10,7 @@ tags = [
 
 ## Introduction
 
-If you're reading this, it's because you've heard about monorepos. If you're a developer, there's a good chance that the idea of having to manage several repositories is something that makes your skin crawl. After all, managing those projects can't be easy! So let's examine what monorepos they do and why people use them.
+If you're reading this, it's because you've heard about monorepos. If you're a developer, there's a good chance that the idea of having to manage several repositories is something that makes your skin crawl. After all, managing those projects can't be easy! So let's examine what monorepos do and why people use them.
 
 ## What is a monorepo?
 
