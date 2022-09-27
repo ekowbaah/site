@@ -1,6 +1,6 @@
 +++
 author = "Ekow Baah-Nyarkoh"
-title = "Book review: 12 Rules for life"
+title = "Book review: 12 Rules For Life:An Antidote to Chaos"
 date = "2022-09-27"
 description = "Review of the book 12 Rules for Life: An Antidote to Chaos by Jordan Peterson"
 tags = [
