@@ -4,8 +4,7 @@ title = "Monorepos: what's the deal with it? 😋"
 date = "2022-09-20"
 description = "What monorepos are, their pros and cons"
 tags = [
-    "monorepos",
-    "objects"
+    "monorepos"
 ]
 +++
 
@@ -49,7 +48,7 @@ Monorepos are a great way to solve some problems with large web applications. Th
 
 - When someone wants code from another team but doesn't know where that code was used (because other developers may have moved it out of their repo), going through each repo takes more time than if all those repos were combined into one giant repository, as everyone else does!
 
-## Do I need one of these things?
+## Do I need one a monorepo for my projects?
 
 The first thing to know about monorepos is that they aren't a silver bullet. They're not replacements for exhaustive testing, continuous integration, or code design.
 
