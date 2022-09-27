@@ -10,17 +10,13 @@ tags = [
 
 ## Introduction
 
-If you're reading this, it's because you've heard about monorepos. If you're a developer, there's a good chance that the idea of having to manage several repositories is something that makes your skin crawl. After all, managing those projects can't be easy! But it's not just developers who use these tools---the biggest companies in the world are using them too. So let's examine what they do and why people use them.
+If you're reading this, it's because you've heard about monorepos. If you're a developer, there's a good chance that the idea of having to manage several repositories is something that makes your skin crawl. After all, managing those projects can't be easy! So let's examine what monorepos they do and why people use them.
 
 ## What is a monorepo?
 
-A monorepo is a single repository for all your projects. It's a way to organize your code and make it easier to manage, but there are other benefits too.
-
-For example, if you have multiple open source projects on GitHub, you probably use separate repos for each one (or even different branches). When working on an issue in one repo, it might be helpful to see how other people have addressed the same issue so that you can get some context about how others solved it. Having everything in one repo means that these issues will be easier to find because they're all related!
-
-Monorepos are also helpful when working on internal projects at work or university. For example, suppose everyone uses a common language like JavaScript or Python across their team. In that case, they'll need access to each others' libraries over time as they become more familiar with them through use (i.e. if someone makes changes but doesn't push up their commits). Just one central location where everyone has access during this process would allow developers on different teams within those organizations.
-
-## Why are people using them?
+A monorepo is a version-controlled code repository that holds many projects. While these projects may be related, they are often logically independent and run by different teams.
+Some companies host all their code in a single repository, shared among everyone. However, Monorepos can reach colossal sizes. Google, for example, is theorized to have the most significant code repository ever, with tens of hundreds of daily commits and over 80 TBs large. Other companies known to run large monorepos are Microsoft, Facebook, and Twitter.
+Monorepos are sometimes called monolithic repositories, but they should not be confused with monolithic architecture, a software development practice for writing self-contained applications. An example is a Ruby on Rails monolith handling websites, API endpoints, and background jobs.
 
 Why are people using them?
 
@@ -30,36 +26,37 @@ Why are people using them?
 
 ## What problems do monorepos solve?
 
-Monorepos are a great way to solve some problems with large web applications. They allow you to:
+At first glance, the choice between monorepos and multirepos may not seem like a big deal, but it’s a decision that will profoundly influence your company’s development workflow. As for their benefits, we can list a few:
 
-- Reuse code from multiple projects
-
-- Simplify build and deployment by bundling all your dependencies into one package and making it easy for others to download and use.
-
-- Efficiently manage multiple teams simultaneously since they're all in one repository.
+- **Visibility**: everyone can see everyone else’s code. This property leads to better collaboration and cross-team contributions — a developer in a different team, can fix a bug in your code you didn’t even know existed.
+- **Simpler dependency management**: sharing dependencies is trivial. There’s little need for a package manager as all modules are hosted in the same repository.
+- **Single source of truth**: one version of every dependency means no versioning conflicts and no dependency hell.
+- **Consistency**: enforcing code quality standards and a unified style is more effortless when you have all your codebase in one place.
+- **Shared timeline**: breaking changes in APIs or shared libraries are exposed immediately, forcing different teams to communicate ahead and join forces. Everyone is invested in keeping up with changes.
+- **Atomic commits**: atomic commits make large-scale refactoring easier. A developer can update several packages or projects in a single commit.
+- **Implicit CI**: [continuous integration](https://semaphoreci.com/continuous-integration) is guaranteed as all the code is already unified in one place.
+- **Unified CI/CD**: you can use the same [CI/CD](https://semaphoreci.com/cicd) deployment process for every project in the repo.
+- **Unified build process**: we can use a shared [build process](https://semaphoreci.com/blog/build-stage) for every application in the repo.
 
 ## What problems do monorepos cause?
 
-- With a monorepo, the more code you have in one place, the harder it is to find what you are looking for.
+As monorepos grow, we reach design limits in version control tools, build systems, and continuous integration pipelines. These problems can make a company go the multi-repo route:
 
-- If there's an issue with one of your applications or services and someone needs to look at it, they will have to go through all of your apps and services before they can figure out which app or service has the problem.
-
-- It makes it harder to detect bugs in multiple applications at once because instead of having a single place where all these bugs are being reported (like GitHub), developers now have numerous places where they'll have their issues written (like different teams).
-
-- When someone wants code from another team but doesn't know where that code was used (because other developers may have moved it out of their repo), going through each repo takes more time than if all those repos were combined into one giant repository, as everyone else does!
+- **Lousy performance**: monorepos are challenging to scale up. Commands like git blame may take unreasonably long times, IDEs begin to lag, productivity suffers, and testing the whole repo on every commit becomes infeasible.
+- **Broken main/master**: a broken master affects everyone working in the monorepo. This can be seen as either disastrous or an excellent motivation to keep tests clean and up to date.
+- **Learning curve**: the learning curve for new developers is steeper if the repository spans many tightly-coupled projects.
+- **Large volumes of data**: monorepos can reach unwieldy volumes of data and daily commits.
+- **Ownership**: maintaining ownership of files is more challenging, as systems like Git or Mercurial don’t feature built-in directory permissions.
+- **Code reviews**: notifications can get very noisy. For instance, GitHub has limited notification settings that are not best suited for a snow slide of pull requests and code reviews.
 
 ## Do I need one a monorepo for my projects?
 
 The first thing to know about monorepos is that they aren't a silver bullet. They're not replacements for exhaustive testing, continuous integration, or code design.
 
-As you'll see in this article and the next few ones coming up on this blog, I think that monorepos can help us build better software by making our lives easier in some ways while making them harder in others. That said, are you already doing things like TDD or CI/CD? Then maybe it will be worth looking at how these tools might fit into your current workflow!
+As you'll see in this article and the next few ones coming up on this blog, I think that monorepos can help us build better software by making our lives easier in some ways while making them harder in others. That said, are you already doing things like TDD or CI/CD? Then maybe it will be worth looking at how monorepos might fit into your current workflow!
 
 ## Takeaway:
 
 - Monorepos are an excellent choice for large projects, but they can be challenging to manage.
 
 - Monorepos are not a good choice for small projects; they make it harder to keep your code organized and easy to find things in the project.
-
-## Conclusion
-
-So, is it worth the trouble? The answer to that question depends on how much work you want to do and your time. If a monorepo is something you need to write code for, they're worth the trouble. But, on the other hand, if you can get away with just using one repo at a time, then, by all means, keep doing what you were doing before.
