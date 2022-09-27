@@ -1,7 +1,7 @@
 +++
 author = "Ekow Baah-Nyarkoh"
 title = "How to compare 2 objects in JavaScript  🥷"
-date = "2022-09-26"
+date = "2022-04-26"
 description = "Best way to compare two javascript objects"
 tags = [
     "javascript",

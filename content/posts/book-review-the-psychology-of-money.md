@@ -1,7 +1,7 @@
 +++
 author = "Ekow Baah-Nyarkoh"
 title = "Book review: The psychology of money 🧠 💸"
-date = "2022-09-12"
+date = "2022-02-12"
 description = "Review of the book psychology of money by Morgan Housel"
 tags = [
     "money",

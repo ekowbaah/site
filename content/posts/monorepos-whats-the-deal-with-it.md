@@ -1,7 +1,7 @@
 +++
 author = "Ekow Baah-Nyarkoh"
 title = "Monorepos: what's the deal with it? 😋"
-date = "2022-09-20"
+date = "2022-06-20"
 description = "What monorepos are, their pros and cons"
 tags = [
     "monorepos"
