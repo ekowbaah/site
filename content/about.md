@@ -13,3 +13,6 @@ what I’ve learned with my teammates and the broader web
 community. I’ve gained so much from others sharing their skills and knowledge.
 
 Outside of software, I enjoy music—a lot. I love listening to music from all parts of the world and all genres. I play the saxophone as well. I do enjoy sports, playing and watching. I play badminton and soccer with some friends in my spare time. I enjoy watching weekend soccer games and am a Juventus FC and Arsenal fan.
+
+> My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.
+> – Maya Angelou
