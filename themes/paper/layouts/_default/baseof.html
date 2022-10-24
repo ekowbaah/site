@@ -50,6 +50,14 @@
 <html class="not-ready text-sm lg:text-base" style="--bg: {{ $.Scratch.Get `bg_color` }}"
   lang="{{ site.LanguageCode }}">
 {{ partial "head.html" . }}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5WY109RS3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-R5WY109RS3');
+</script>
 
 <body class="text-black duration-200 ease-out dark:text-white">
   {{ partial "header.html" . }}
