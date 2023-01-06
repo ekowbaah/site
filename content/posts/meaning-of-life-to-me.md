@@ -3,9 +3,7 @@ author = "Ekow Baah-Nyarkoh"
 title = "Meaning of life to me
 date = "2023-01-06"
 description = ""
-tags = [
-   
-]
+
 +++
 
 The meaning of life is a question that has puzzled philosophers, theologians, and everyday people for centuries. For me, the meaning of life is intricately tied to my belief in God and my faith in Jesus Christ.
